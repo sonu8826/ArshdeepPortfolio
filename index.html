@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> --> 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "r3bOgWhNNdbCBNPLc",
+      });
+   })();
+</script>
+<script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light " id="navBar">
+            <h3>Arshdeep's Portfolio</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#mainSection"> <i class="bi bi-house-door-fill"></i>Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Projects</a>
+                    <a class="nav-item nav-link " href="#contact-Section" >Contact</a>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <div id="mainSection">
+            <div class="profile-section">
+                <h1 id="animated-text">
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Arshdeep a Professional Editor." ]'>
+                      <span class="wrap"></span>
+                    </a>
+                  </h1>
+                <p id="paraGrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ad neque harum obcaecati nobis cumque
+                    vel ipsum, minus, laudantium maxime qui autem, voluptatibus iste tempora adipisci voluptas quaerat ex
+                    reiciendis.</p>
+                <div class="socialLinks">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>  
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>             
+            </div>
+            <div class="imageSection">
+                <img src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&q=70&fm=webp"
+                    alt="">
+            </div>
+        </div>
+        <hr>
+        <div id="aboutSection">
+              <h2>About Us</h2>
+        </div>
+        <div id="contact-Section">
+            <h2>Contact Us <i class="bi bi-envelope"></i></h2>
+            <div id="form-section">
+                <form>
+                    <h4 style="text-align: center; text-decoration: underline;">Let's Work Together </h4>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name"  placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Enter E-mail Id">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="contact" placeholder="Enter Contact Number">
+                      </div>
+                      <div class="form-group">
+                        <textarea name="" id="message" placeholder="Message" type="text" style="height: 10rem; width: 100%"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary" onclick="sendMail()">Submit</button>
+                  </form>
+            </div>
+            
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div id="parent-footer">
+            <div class="left">
+                Copyright © Arshdeep's Portfolio 2024
+            </div>
+            <div class="right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
