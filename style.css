@@ -30,7 +30,7 @@ body {
     /* max-width: 80%; */
    
     text-align: justify;
-    height: 60%;   
+    height: 450px;   
      #aboutDeatils{
         h2 {
             text-align: center;
@@ -65,7 +65,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 0%;
-    height: 600px;
+    height: 500px;
 }
 .imageSection{
     /* border: 2px solid black; */
@@ -74,7 +74,7 @@ body {
         width: 65%;
         height: 400px;
         /* border-radius: 50%; */
-        margin-bottom: 140px;
+        margin-bottom: 100px;
     }
 }
 .profile-section{
@@ -99,8 +99,12 @@ form {
     padding: 30px;
     margin-top: 2%;
 }
-#contact-Section h2 {
-    text-align: center;
+#contact-Section {
+    h2 {
+        text-align: center;
+    }
+    height: 600px;
+    margin-top: 50px;
 }
 #form-section {
     display: flex;
@@ -122,6 +126,9 @@ html {
     }
 }
   @media only screen and (max-width: 600px) {
+    #aboutSection{
+        height: 800px;
+    }
     #mainSection {
         flex-direction: column;
         .profile-section{
