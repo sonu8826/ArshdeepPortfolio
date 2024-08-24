@@ -125,11 +125,18 @@ html {
         }
     }
 }
+.section-headings{
+    font-weight: bold;
+    text-decoration: underline;
+}
   @media only screen and (max-width: 600px) {
     #aboutSection{
-        height: 800px;
+        /* height: 800px; */
+        height: auto;
+        margin-top: 20px;
     }
     #mainSection {
+        height: auto;
         flex-direction: column;
         .profile-section{
             width: initial;
