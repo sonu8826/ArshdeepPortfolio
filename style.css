@@ -68,13 +68,11 @@ body {
     height: 500px;
 }
 .imageSection{
-    /* border: 2px solid black; */
     width: 40%;
     img{
-        width: 65%;
+        width: 68%;
         height: 400px;
-        /* border-radius: 50%; */
-        margin-bottom: 100px;
+        border-radius: 50%;
     }
 }
 .profile-section{
@@ -156,6 +154,7 @@ html {
                 height: 280px;
                 margin-left: 10%;
                 margin-top: 40px;
+                border-radius: 50%;
             }
         }
     }
