@@ -149,6 +149,47 @@ form {
     width: 20%;
 }
 
+#services {
+    margin-top: 5%;
+    h1 , h4 {
+        text-align: center;
+    }
+    
+
+} 
+#MainService-section{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #Mainsection-left {
+        width: 30%;
+        /* border: 2px solid; */
+        text-align: center;
+        /* font-weight: bold; */
+        p {
+            padding: 10px;
+            color: black;
+            font-size: x-large;
+        }
+        p:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    #Mainsection-right {
+        width: 70%;
+        /* border: 2px solid; */
+        font-weight: bold;
+        .Mainsection-Div img {
+            width: 60%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
 #contact-Section {
     h4 {
         text-align: center;
@@ -184,6 +225,11 @@ html {
         }
     }
 }
+
+ .div-2, .div-3, .div-4 {
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
     #profile-img{
@@ -274,5 +320,27 @@ html {
     }
     .btn-sm {
         width: 120px;
+    }
+    #MainService-section{
+        display: initial;
+        #Mainsection-left {
+            width: 100%;
+            p {
+                padding: 5px;
+            }
+        }
+        #Mainsection-right{
+            width: 100%;
+            .Mainsection-Div img {
+                width: 80%;
+                height: 300px       ;
+                margin-left: 10%;
+            }
+            .Mainsection-Div p {
+                text-align: left;
+                /* width: 100%; */
+                padding: 0px 30px;
+            }
+        }
     }
 }

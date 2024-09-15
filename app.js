@@ -78,4 +78,35 @@ emailjs.send(serviceID,templateID, params).then((res) => {
 })
 }
 
+document.addEventListener("DOMContentLoaded" , () => {
+    document.getElementById("pic").addEventListener('click', () => {
+        // alert("function called")
+        document.querySelector(".div-1").style.display = 'block';
+        document.querySelector(".div-2").style.display = 'none';
+        document.querySelector(".div-3").style.display = 'none';
+        document.querySelector(".div-4").style.display = 'none';
+
+    })
+    document.getElementById("motion").addEventListener('click', () => {
+        // alert("function called")
+        document.querySelector(".div-1").style.display = 'none';
+        document.querySelector(".div-2").style.display = 'block';
+        document.querySelector(".div-3").style.display = 'none';
+        document.querySelector(".div-4").style.display = 'none';
+    })
+    document.getElementById("color").addEventListener('click', () => {
+        // alert("function called")
+        document.querySelector(".div-1").style.display = 'none';
+        document.querySelector(".div-2").style.display = 'none';
+        document.querySelector(".div-3").style.display = 'block';
+        document.querySelector(".div-4").style.display = 'none';
+    })
+    document.getElementById("post").addEventListener('click', () => {
+        // alert("function called")
+        document.querySelector(".div-1").style.display = 'none';
+        document.querySelector(".div-2").style.display = 'none';
+        document.querySelector(".div-3").style.display = 'none';
+        document.querySelector(".div-4").style.display = 'block';
+    })  
+})
 
